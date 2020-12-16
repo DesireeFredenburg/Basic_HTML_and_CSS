@@ -9,5 +9,7 @@ h3 {
 
 .image {
     border: 2px dashed red;
+        width: 600px;
+        height: 300px; /* needed to set the width/ height for the dashes */
 }
     
