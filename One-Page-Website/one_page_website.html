@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>Everblutanica</title>
 		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css" />
+		<script src="JS/one_page_website.js" defer></script>
+
 	</head>
 	<body>
 	
@@ -40,9 +42,11 @@
 				<div>
 				
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
+					<div class="row">
+
 						<div>
-							<img src="./Photos/Thumbs/thumbnail_1.jpeg" alt="mudclothe bags and product">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_1.jpeg" alt="mudclothe bags and product" onlcick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -53,8 +57,8 @@
 					
 					<!-- PHOTO-CONTAINER 2 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_2.jpeg" alt="facial oil">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_2.jpeg" alt="facial oil" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -65,8 +69,8 @@
 					
 					<!-- PHOTO-CONTAINER 3 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_3.jpeg" alt="accessories">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_3.jpeg" alt="accessories" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -77,8 +81,8 @@
 					
 					<!-- PHOTO-CONTAINER 4 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_4.jpeg" alt="mom and daughter">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_4.jpeg" alt="mom and daughter" onclick="openModal();currentSlide(4)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -89,8 +93,8 @@
 					
 					<!-- PHOTO-CONTAINER 5 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_5.jpeg" alt="skincare collection">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_5.jpeg" alt="skincare collection" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -101,8 +105,8 @@
 					
 					<!-- PHOTO-CONTAINER 6 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_6.jpeg" alt="bedtime eyes serum">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_6.jpeg" alt="bedtime eyes serum" onclick="openModal();currentSlide(6)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -113,8 +117,8 @@
 					
 					<!-- PHOTO-CONTAINER 7 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_7.jpeg" alt="oat and herb wash">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_7.jpeg" alt="oat and herb wash" onclick="openModal();currentSlide(7)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -125,8 +129,8 @@
 					
 					<!-- PHOTO-CONTAINER 8 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_8.jpeg" alt="polish">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_8.jpeg" alt="polish" onclick="openModal();currentSlide(8)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
@@ -137,13 +141,14 @@
 					
 					<!-- PHOTO-CONTAINER 9 -->
 					<div>
-						<div>
-							<img src="./Photos/Thumbs/thumbnail_9.jpeg" alt="hydrosol and balm">
+						<div class="column">
+							<img src="./Photos/Thumbs/thumbnail_9.jpeg" alt="hydrosol and balm" onclick="openModal();currentSlide(9)" class="hover-shadow">
 							<div>
 								<h1>Click to Enlarge</h1>
 								<p>4% of sales go to ocean cleanup</p>
 							</div>
 						</div>
+					</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 9 -->
 					
@@ -151,6 +156,105 @@
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- THE MODAL/ LIGHTBOX-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_1.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_2.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_4.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_4.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_5.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_6.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_7.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_8.jpeg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="./Photos/Thumbs/thumbnail_9.jpeg" style="width:100%">
+				</div>
+
+				<!--next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail image controls-->
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_1.jpeg" onclick="currentSlide(1)" alt="mudclothe bags and product" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_2.jpeg" onclick="currentSlide(2)" alt="facial oil" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_3.jpeg" onclick="currentSlide(3)" alt="accessories" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_4.jpeg" onclick="currentSlide(4)" alt="mom and daughter" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_5.jpeg" onclick="currentSlide(5)" alt="skincare collection" style="width: 100%;"> 
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_6.jpeg" onclick="currentSlide(6)" alt="bedtime eyes serum" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_7.jpeg" onclick="currentSlide(7)" alt="oat and herb wash" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_8.jpeg" onclick="currentSlide(8)" alt="polish" style="width: 100%;">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Photos/Thumbs/thumbnail_9.jpeg" onclick="currentSlide(9)" alt="hydrosol and balm" style="width: 100%;">
+				</div>
+
+			</div>
+		</div>
 		
 		<!-- VIDEO -->
 		<section>
@@ -208,6 +312,6 @@
 			<footer>www.everblutanica.skincare &nbsp;|&nbsp; &copy; 2018</footer>
 		</div>
 		<!-- END FOOTER -->
-		
+
 	</body>
 </html>
